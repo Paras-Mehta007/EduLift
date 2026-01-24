@@ -1,0 +1,20 @@
+.profile-card {
+  max-width: 600px;
+}
+
+.profile-btn {
+  width: 100%;
+  padding: 0.875rem;
+  font-weight: 600;
+}
+
+textarea {
+  font-family: inherit;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
