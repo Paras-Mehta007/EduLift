@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./auth/ProtectedRoute";
 
+import Home from "./Home";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
 import StudentDashboard from "./student/StudentDashboard";
@@ -13,7 +14,7 @@ const HomeRedirect = () => {
 
   if (loading) return null;
 
-  if (!auth?.token) return <Navigate to="/login" />;
+  if (!auth?.token) return <Navigate to="/home" />;
 
   return auth.role === "student"
     ? <Navigate to="/student" />
@@ -26,6 +27,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomeRedirect />} />
+          <Route path="/home" element={<Home />} />
 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

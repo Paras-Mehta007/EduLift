@@ -8,6 +8,7 @@ import recruiterRoutes from "./routes/recruiter.routes.js";
 import opportunityRoutes from "./routes/opportunity.routes.js";
 import applicationRoutes from "./routes/application.routes.js";
 import uploadRoutes from "./routes/upload.routes.js";
+import financialAidRoutes from "./routes/financialAid.routes.js";
 
 import { errorHandler } from "./middleware/error.middleware.js";
 
@@ -23,6 +24,7 @@ app.use("/api/recruiter", recruiterRoutes);
 app.use("/api/opportunities", opportunityRoutes);
 app.use("/api/applications", applicationRoutes);
 app.use("/api/upload", uploadRoutes);
+app.use("/api/financial-aid", financialAidRoutes);
 
 app.use(errorHandler);
 

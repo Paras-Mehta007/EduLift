@@ -7,7 +7,10 @@ const studentProfileSchema = new mongoose.Schema({
   cgpa: Number,
   skills: [String],
   incomeRange: Number,
-  resumeUrl: String,
+  resumeLink: String,
+  linkedinUrl: String,
+  githubUrl: String,
+  portfolioLink: String,
   incomeProofUrl: String,
   savedOpportunities: [{ type: mongoose.Schema.Types.ObjectId, ref: "Opportunity" }],
 }, { timestamps: true });
