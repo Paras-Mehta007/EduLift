@@ -44,19 +44,40 @@ const Login = () => {
     }
   };
 
-  return (
-    <div className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h1>
-          <p className="text-gray-600">Sign in to your account to continue</p>
-        </div>
 
-        {error && (
-          <div className="bg-red-50 border-l-4 border-red-500 text-red-600 p-4 mb-6 rounded">
-            {error}
-          </div>
-        )}
+
+
+
+
+
+  return (
+
+
+
+  <div className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500">
+
+    {/* Repeating EduLift Background */}
+    <div className="absolute inset-0 flex flex-wrap items-center justify-center opacity-10 pointer-events-none select-none text-white font-bold text-lg ">
+      {Array.from({ length: 150 }).map((_, i) => (
+        <span key={i} className="m-6">EduLift</span>
+      ))}
+    </div>
+
+    {/* Login Card */}
+    <div className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl p-8">
+      <div className="text-center mb-8">
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h1>
+        <p className="text-gray-600">Sign in to your account to continue</p>
+      </div>
+
+      {error && (
+        <div className="bg-red-50 border-l-4 border-red-500 text-red-600 p-4 mb-6 rounded">
+          {error}
+        </div>
+      )}
+
+
+
 
         <form onSubmit={submit} className="space-y-5">
           <div>
