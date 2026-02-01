@@ -181,3 +181,103 @@ const Home = () => {
           </div>
         </div>
       </section>*/}
+
+
+
+
+     {/* {/* Testimonials Section 
+      <section className="bg-gray-50 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
+            Success Stories from Our Community
+          </h2>
+          <p className="text-center text-gray-600 text-lg mb-12">
+            Real students, real results. See how EduLift has transformed educational journeys
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Testimonial 1 
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <p className="text-gray-700 mb-6 italic">
+                "EduLift helped me discover a scholarship I didn't know I qualified for. I'm now pursuing my dream degree!"
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">
+                  AJ
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Alex Johnson</p>
+                  <p className="text-sm text-gray-600">Computer Science Major</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 2 
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <p className="text-gray-700 mb-6 italic">
+                "The micro-internship I found through EduLift gave me real-world experience that helped me land my first job."
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
+                  MP
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Maya Patel</p>
+                  <p className="text-sm text-gray-600">Business Administration</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 3 
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <p className="text-gray-700 mb-6 italic">
+                "As a first-generation college student, I was lost until I found EduLift. The resources here made higher education possible for me."
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  CR
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Carlos Rodriguez</p>
+                  <p className="text-sm text-gray-600">Engineering Student</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      */}
+
+     {/* {/* Final CTA 
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Trusted By Leading Institutions
+          </h2>
+          <button
+            onClick={handleGetStarted}
+            className="px-8 py-4 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl text-lg transform hover:scale-105"
+          >
+            Join Our Community Today
+          </button>
+        </div>
+      </section> */}
+
+
+
+
+
+
+
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-300 py-8 border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p>&copy; 2026 EduLift. Empowering students through education and opportunity.</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Home;
